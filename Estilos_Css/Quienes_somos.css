@@ -1,0 +1,188 @@
+html{
+    height: 110%;
+ }
+ 
+ body{
+     background-color: black ;
+     /*-------------------------------------*/
+     margin-top: 120px;
+     overflow: auto; 
+     min-height: 100%;
+   
+ }
+ header{
+    
+     text-align: center;
+     margin-top: -110px;
+     background: linear-gradient(red,purple,yellow);
+   -webkit-background-clip: text;
+   color: transparent;
+   font-size: 75px;
+ 
+    
+   
+ }
+ div{
+     display: inline-block;
+ }
+ .descripcion{
+     position: absolute;
+     font-size: 30px;
+     margin-top: -70px;
+     font-weight: bold;
+     margin-left: 725px;
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+ 
+ }
+ .equipo-h1{
+ text-align: center;
+ margin-top: -10px;
+ color: white;
+ 
+ }
+ .Isra{
+     width: 410px;
+     height: 520px;
+     position: absolute;
+     top: 410px;
+ }
+ .isra-h2{
+     position: absolute;
+     top: 345px;
+     color: white;
+ }
+ 
+ .Isra:hover{
+  -webkit-transform: rotateY(180deg);
+ -webkit-transform-style: preserve-3d;
+ transform: rotateY(180deg);
+ transform-style: preserve-3d;
+ transition: all  0.5s linear;
+ 
+ }
+ .Isra{
+     
+     -webkit-backface-visibility: hidden;
+     transition: all  2s linear;
+     transition-delay: 8s;
+     
+ }
+ 
+ .Rick{
+     width: 410px;
+     height: 520px;
+     right: 9px;
+     top: 410px;
+     position: absolute;
+ 
+ }
+ 
+ .Rick:hover{
+  -webkit-transform: rotateY(180deg);
+ -webkit-transform-style: preserve-3d;
+ transform: rotateY(180deg);
+ transform-style: preserve-3d;
+ transition: all  0.5s linear;
+ 
+ }
+ .Rick{
+     
+     -webkit-backface-visibility: hidden;
+     transition: all  2s linear;
+     transition-delay: 8s;
+ }
+ .rick-h2{
+     position: absolute;
+     top: 345px;
+     right: 235px;
+     color: white;
+ }
+ 
+ 
+ 
+ .texto-dentro1{
+     position: absolute;
+     display: block;
+     width: 410px;
+     height: 510px;
+     font-size: 26px;
+     font-family:  Arial, sans-serif;
+     font-style: italic;
+     float: left;
+     margin-top: 10px;
+     top: 410px;
+     background-color: red;
+    
+     
+ 
+ }
+ .texto-dentro2{
+     position: absolute;
+     display: block;
+     width: 410px;
+     height: 510px;
+     font-size: 26px;
+     font-family:  Arial, sans-serif;
+     font-style: italic;
+     float: left;
+     margin-top: 10px;
+     right: 9px;
+     top: 410px;
+     background-color: purple;
+     color: white;
+     
+ 
+ }
+ 
+ .texto-dentro3{
+     position: absolute;
+     display: block;
+     width: 410px;
+     height: 520px;
+     font-size: 26px;
+     font-family:  Arial, sans-serif;
+     font-style: italic;
+     float: left;
+     margin-top: 10px;
+     left: 740px;
+     top: 395px;
+     background-color: yellow;
+ 
+ } 
+ 
+ .Pablo{
+     width: 410px;
+     height: 530px;
+     left: 0;
+     top: 0;
+     position: absolute;
+ 
+ }
+ 
+ .Pablo:hover{
+  -webkit-transform: rotateY(180deg);
+ -webkit-transform-style: preserve-3d;
+ transform: rotateY(180deg);
+ transform-style: preserve-3d;
+ transition: all  0.5s linear;
+ 
+ 
+ }
+ .Pablo{
+     
+     -webkit-backface-visibility: hidden;
+     transition: all  2s linear;
+     transition-delay: 8s;
+ }
+ .pablo-h2{
+     position: absolute;
+     top: 345px;
+     left: 740px;
+     color: white;
+ 
+ }
+ 
+ 
+ 
+ 
