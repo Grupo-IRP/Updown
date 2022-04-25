@@ -10,37 +10,86 @@
     <h1>Formulario de Contacto</h1>
     <form action="envíoFormulario.jsp" method="get">
         <fieldset>
-            <legend>Datos Personales</legend>
+            <legend><h2>Datos de Contacto</h2></legend>
 
-            Nombre: <input type="text" name="nombre" required/>
+            Tipo de Cliente: <select name="tipocliente">
+                <option value="part" selected>Particular</option>
+                <option value="emp">Empresa</option>
+            </select>
+            <br/>
+            <br/>
+            Nombre o Razón Social: <input type="text" name="nombre" required/>
             Apellidos: <input type="text" name="apellidos"/>
             <br/>
             <br/>   
-            DNI: <input type="text" name="DNI" required/>
+            DNI/CIF: <input type="text" name="DNI" required/>
             <br/>
             <br/>
-            Teléfono: <input placeholder="Escriba su número de teléfono" type="tel" name="telefono" required/>
-            <br/>
-            <br/>
+            Teléfono: <input placeholder="Escriba su nº de teléfono" type="tel" name="telefono" required/>
             Email: <input type="email" name="email" required/>
             <br/>
         </fieldset>
+
         <fieldset>
-            <legend>Contratación de servicios</legend>
+            <legend><h2>Contratación de servicios</h2></legend>
+
+            <label for="servicios"><h3>Servicios a contratar</h3></label>
             
-            <label for="servicios">Servicios a contratar</label>
-            <br/>
             <input type="checkbox" name="servicios" value="W"/> Desarrollo Web <br/>
             <input type="checkbox" name="servicios" value="B"/> Desarrollo BBDD <br/>
             <input type="checkbox" name="servicios" value="A"/> Desarrollo App Android <br/>
             <input type="checkbox" name="servicios" value="I"/> Desarrollo App IOS <br/>
+            <input type="checkbox" name="servicios" value="E"/> E-commerce <br/>
+            <input type="checkbox" name="servicios" value="H"/>  HelpDesk (customer support)<br/>
+            <br/>
+            <br/>
+            <label for="descproy">Descripción de Proyecto: </label>
+            <br/>
+            <textarea placeholder="Describe detalladamente el proyecto que quieres contratar" name="descproy" id="txt" cols="150" rows="10" required></textarea>
         </fieldset>
 
+        <fieldset>
+            <legend><h2>Datos de Facturación</h2></legend>
+
+            <input type="radio" name="facturación" value="FYes"/> Marca esta opción si los datos de facturación son los mismos que los datos de contacto <br/>
+
+            <br/>
+            <br/>
+            Nombre o Razón Social: <input type="text" name="nombref" />
+            Apellidos: <input type="text" name="apellidosf"/>
+            <br/>
+            <br/>   
+            DNI/CIF: <input type="text" name="DNIf" />
+            <br/>
+            <br/>
+            Teléfono: <input placeholder="Escriba su nº de teléfono" type="tel" name="telefonof" />
+            Email: <input type="email" name="emailf" />
+            <br/>
+
+
+        </fieldset>
+        <br/>
+        <p><b>Acepta los términos y condiciones de uso</b></p> 
+                 <a href="Docs/Terminos_de_uso_y_condiciones_generales_de_contratacion.pdf" target="blank" title="Licencia de uso">Terminos y condiciones</a>
+                 <input type="checkbox" name="Terminos" value="Y" required>
+        
+        <br/>
+        <br/>
         <input type="submit" value="Enviar"/>
         <input type="reset" value="Limpiar formulario"/>
 
 
+
+
     </form>
+    <footer>
+        <pre>
+            <b>Protección de Datos:</b> Updown informa a los usuarios de que sus datos personales no serán 
+            cedidos a terceras organizaciones, con la salvedad de que dicha cesión de datos este amparada en 
+            una obligaciónvlegal o cuando la prestación de un servicio implique la necesidad de una relación 
+            contractual con un encargado de tratamiento. En este último caso, solo se llevará a cabo la cesión 
+            de datos al tercero cuando Updown disponga del consentimiento expreso del usuario.</pre>
+    </footer>
 
     
     
