@@ -5,7 +5,6 @@ html{
  body{
      background-color: black ;
      /*-------------------------------------*/
-     margin-top: 120px;
      overflow: auto; 
      min-height: 100%;
    
@@ -15,14 +14,14 @@ html{
      text-align: center;
      margin-top: -110px;
      background: linear-gradient(red,purple,yellow);
-   -webkit-background-clip: text;
-   color: transparent;
-   font-size: 75px;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 75px;
  
     
    
  }
- div{
+ .div-parrafo{
      display: inline-block;
  }
  .descripcion{
@@ -53,19 +52,16 @@ html{
      color: white;
  }
  
- .Isra:hover{
-  -webkit-transform: rotateY(180deg);
- -webkit-transform-style: preserve-3d;
- transform: rotateY(180deg);
- transform-style: preserve-3d;
- transition: all  0.5s linear;
+ .Isra:active{
+    transform: rotateY(180deg);
+    transition: all  0.5s linear;
  
  }
  .Isra{
      
      -webkit-backface-visibility: hidden;
      transition: all  2s linear;
-     transition-delay: 8s;
+     transition-delay: 10s;
      
  }
  
@@ -78,19 +74,15 @@ html{
  
  }
  
- .Rick:hover{
-  -webkit-transform: rotateY(180deg);
- -webkit-transform-style: preserve-3d;
- transform: rotateY(180deg);
- transform-style: preserve-3d;
- transition: all  0.5s linear;
+ .Rick:active{
+    transform: rotateY(180deg);
+    transition: all  0.5s linear;
  
  }
- .Rick{
-     
+ .Rick{ 
      -webkit-backface-visibility: hidden;
      transition: all  2s linear;
-     transition-delay: 8s;
+     transition-delay: 10s;
  }
  .rick-h2{
      position: absolute;
@@ -160,12 +152,10 @@ html{
  
  }
  
- .Pablo:hover{
-  -webkit-transform: rotateY(180deg);
- -webkit-transform-style: preserve-3d;
- transform: rotateY(180deg);
- transform-style: preserve-3d;
- transition: all  0.5s linear;
+ .Pablo:active{
+    transform: rotateY(180deg);
+
+    transition: all  0.5s linear;
  
  
  }
@@ -173,7 +163,7 @@ html{
      
      -webkit-backface-visibility: hidden;
      transition: all  2s linear;
-     transition-delay: 8s;
+     transition-delay: 10s;
  }
  .pablo-h2{
      position: absolute;
