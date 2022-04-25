@@ -10,7 +10,7 @@
     <h1>Formulario de Contacto</h1>
     <form action="envíoFormulario.jsp" method="get">
         <fieldset>
-            <legend>Contratación de Servicios</legend>
+            <legend>Datos Personales</legend>
 
             Nombre: <input type="text" name="nombre" required/>
             Apellidos: <input type="text" name="apellidos"/>
@@ -24,19 +24,20 @@
             <br/>
             Email: <input type="email" name="email" required/>
             <br/>
-            <br/>
+        </fieldset>
+        <fieldset>
+            <legend>Contratación de servicios</legend>
+            
             <label for="servicios">Servicios a contratar</label>
             <br/>
             <input type="checkbox" name="servicios" value="W"/> Desarrollo Web <br/>
             <input type="checkbox" name="servicios" value="B"/> Desarrollo BBDD <br/>
             <input type="checkbox" name="servicios" value="A"/> Desarrollo App Android <br/>
             <input type="checkbox" name="servicios" value="I"/> Desarrollo App IOS <br/>
-                        
-
-
         </fieldset>
 
-
+        <input type="submit" value="Enviar"/>
+        <input type="reset" value="Limpiar formulario"/>
 
 
     </form>
