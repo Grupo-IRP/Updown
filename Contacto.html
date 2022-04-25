@@ -12,8 +12,28 @@
         <fieldset>
             <legend>Contratación de Servicios</legend>
 
-            <label for="nombre">Nombre</label>
-            
+            <!--<label for="nombre">Nombre</label> -->
+            Nombre: <input type="text" name="nombre" required/>
+            Apellidos: <input type="text" name="apellidos"/>
+            <br/>
+            <br/>   
+            DNI: <input type="text" name="DNI" required/>
+            <br/>
+            <br/>
+            Teléfono: <input placeholder="Escriba su número de teléfono" type="tel" name="telefono" required/>
+            <br/>
+            <br/>
+            Email: <input type="email" name="email" required/>
+            <br/>
+            <br/>
+            <label for="servicios">Servicios a contratar</label>
+            <br/>
+            <input type="checkbox" name="servicios" value="W"/> Desarrollo Web <br/>
+            <input type="checkbox" name="servicios" value="B"/> Desarrollo BBDD <br/>
+            <input type="checkbox" name="servicios" value="A"/> Desarrollo App Android <br/>
+            <input type="checkbox" name="servicios" value="I"/> Desarrollo App IOS <br/>
+                        
+
 
         </fieldset>
 
@@ -21,6 +41,8 @@
 
 
     </form>
+
+    
     
 </body>
 </html>
