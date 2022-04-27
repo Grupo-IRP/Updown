@@ -1,177 +1,233 @@
-html{
-    height: 110%;
- }
- 
- body{
-     background-color: black ;
-     /*-------------------------------------*/
-     overflow: auto; 
-     min-height: 100%;
-   
- }
- header{
-    
-     text-align: center;
-     margin-top: -110px;
-     background: linear-gradient(red,purple,yellow);
-    -webkit-background-clip: text;
-    color: transparent;
-    font-size: 75px;
- 
-    
-   
- }
- .div-parrafo{
-     display: inline-block;
- }
- .descripcion{
-     position: absolute;
-     font-size: 30px;
-     margin-top: -70px;
-     font-weight: bold;
-     margin-left: 725px;
-     font-family: Arial, Helvetica, sans-serif;
-     color: white;
- 
- }
- .equipo-h1{
- text-align: center;
- margin-top: -10px;
- color: white;
- 
- }
- .Isra{
-     width: 410px;
-     height: 520px;
-     position: absolute;
-     top: 410px;
- }
- .isra-h2{
-     position: absolute;
-     top: 345px;
-     color: white;
- }
- 
- .Isra:active{
-    transform: rotateY(180deg);
-    transition: all  0.5s linear;
- 
- }
- .Isra{
-     
-     -webkit-backface-visibility: hidden;
-     transition: all  2s linear;
-     transition-delay: 10s;
-     
- }
- 
- .Rick{
-     width: 410px;
-     height: 520px;
-     right: 9px;
-     top: 410px;
-     position: absolute;
- 
- }
- 
- .Rick:active{
-    transform: rotateY(180deg);
-    transition: all  0.5s linear;
- 
- }
- .Rick{ 
-     -webkit-backface-visibility: hidden;
-     transition: all  2s linear;
-     transition-delay: 10s;
- }
- .rick-h2{
-     position: absolute;
-     top: 345px;
-     right: 235px;
-     color: white;
- }
- 
- 
- 
- .texto-dentro1{
-     position: absolute;
-     display: block;
-     width: 410px;
-     height: 510px;
-     font-size: 26px;
-     font-family:  Arial, sans-serif;
-     font-style: italic;
-     float: left;
-     margin-top: 10px;
-     top: 410px;
-     background-color: red;
-    
-     
- 
- }
- .texto-dentro2{
-     position: absolute;
-     display: block;
-     width: 410px;
-     height: 510px;
-     font-size: 26px;
-     font-family:  Arial, sans-serif;
-     font-style: italic;
-     float: left;
-     margin-top: 10px;
-     right: 9px;
-     top: 410px;
-     background-color: purple;
-     color: white;
-     
- 
- }
- 
- .texto-dentro3{
-     position: absolute;
-     display: block;
-     width: 410px;
-     height: 520px;
-     font-size: 26px;
-     font-family:  Arial, sans-serif;
-     font-style: italic;
-     float: left;
-     margin-top: 10px;
-     left: 740px;
-     top: 395px;
-     background-color: yellow;
- 
- } 
- 
- .Pablo{
-     width: 410px;
-     height: 530px;
-     left: 0;
-     top: 0;
-     position: absolute;
- 
- }
- 
- .Pablo:active{
-    transform: rotateY(180deg);
 
+
+*{padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+}
+  
+body{height: 900px;}
+  
+.img-logo{
+    max-width: 150px;
+    float: left;
+    margin-top: -200px;
+  
+}
+.header{
+   text-align: center;
+   width: 100%;
+   height: auto;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   overflow: hidden;
+   border-radius: 0 0 45% 45% / 30%;
+}
+  
+.overlay{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: rgb(187, 75, 187);
+    background-image: linear-gradient(135deg,black 15%,  grey 75%);
+  
+}
+  
+.h1-header {
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+  
+.h3-header{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    color: rgb(92, 12, 92);
+}
+  
+  
+.menu {
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+  
+.menu ul{
+    display: inline-flex;
+    padding: 0;
+    margin:auto;
+    list-style: none;
+}
+  
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(168, 230, 75);
+    padding: 10px ;
+    color: black;
+    font-size: 20px;
+    
+}
+  
+.menu a:hover{ /*Propiedad Hover: Al pasar el ratón por encima, despues elegimos el cambio o efecto*/
+    background-color: green;
+}
+  
+.menu ul li ul { /* Esto es para ocultar el desplegable y que no salga de manera automática*/
+    display: none;
+    float: right; /*mantiene menú*/
+    /*float: left  Quita el menú y se convierte en inicio*/
+}
+  
+.menu  ul li a:hover + ul, .menu ul li ul:hover { /* La primera parte hace que se despligue el menú y la segunda parte nos deja interactuar/mantiene con el menú desplegado*/
+    display: inline-flex;  
+}
+
+body{
+    background-color: black ;
+    /*-------------------------------------*/
+    overflow: auto; 
+    min-height: 100%;
+   
+}
+.div-parrafo{
+    display: inline-block;
+}
+
+.equipo-h1{
+ text-align: center;
+ margin-top: 10px;
+ color: white;
+}
+
+.isra-h2{
+    position: absolute;
+    top: 450px;
+    color: white;
+    margin-left: 3%;
+}
+ 
+.Isra{
+    width: 410px;
+    height: 530px;
+    position: absolute;
+    top: 480px;
+    -webkit-backface-visibility: hidden;
+    transition: all  2s linear;
+    transition-delay: 10s;
+    margin-left: 3%;
+}
+
+.Isra:active{
+    transform: rotateY(180deg);
+    transition: all  0.5s linear;
+}
+
+.texto-dentro1{
+    position: absolute;
+    display: block;
+    width: 410px;
+    height: 510px;
+    font-size: 26px;
+    font-family:  Arial, sans-serif;
+    font-style: italic;
+    float: left;
+    margin-top: 10px;
+    margin-left: 3%;
+    top: 480px;
+    background-color: red;
+}
+
+.rick-h2{
+    position: absolute;
+    top: 450px;
+    right: 291px;
+    color: white;
+}
+ 
+.Rick{
+    width: 410px;
+    height: 530px;
+    right: 9px;
+    top: 480px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    transition: all  2s linear;
+    transition-delay: 10s;
+    margin-right: 3%;
+ 
+}
+
+.Rick:active{
+    transform: rotateY(180deg);
     transition: all  0.5s linear;
  
- 
- }
- .Pablo{
+}
+
+.texto-dentro2{
+    position: absolute;
+    display: block;
+    width: 410px;
+    height: 510px;
+    font-size: 26px;
+    font-family:  Arial, sans-serif;
+    font-style: italic;
+    float: left;
+    margin-top: 10px;
+    margin-right: 3%;
+    right: 9px;
+    top: 480px;
+    background-color: purple;
+    color: white;
      
-     -webkit-backface-visibility: hidden;
-     transition: all  2s linear;
-     transition-delay: 10s;
- }
- .pablo-h2{
-     position: absolute;
-     top: 345px;
-     left: 740px;
-     color: white;
  
- }
+}
+
+.pablo-h2{
+    position: absolute;
+    top: 450px;
+    left: 740px;
+    color: white;
+ 
+}
+
+.Pablo{
+    width: 410px;
+    height: 530px;
+    left: 740px;
+    top: 480px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    transition: all  2s linear;
+    transition-delay: 10s; 
+    margin-left: auto;
+}
+ 
+.Pablo:active{
+    transform: rotateY(180deg);
+    transition: all  0.5s linear;
+}
+ 
+.texto-dentro3{
+    position: absolute;
+    display: block;
+    width: 410px;
+    height: 520px;
+    font-size: 26px;
+    font-family:  Arial, sans-serif;
+    font-style: italic;
+    float: left;
+    margin-top: 10px;
+    margin-left: auto;
+    left: 740px;
+    top: 480px;
+    background-color: yellow;
+} 
+ 
+
+
+
  
  
  
