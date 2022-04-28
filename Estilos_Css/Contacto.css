@@ -1,153 +1,203 @@
 
-*{padding: 0; 
-    margin: 0; 
-    box-sizing: border-box;
-  }
-  
-  body{height: 900px;}
-  
-  .img-logo{
-    max-width: 150px;
-    float: left;
-    margin-top: -200px;
-  
-  }
-  .header{
-   text-align: center;
-   width: 100%;
-   height: auto;
-   background-size: cover;
-   background-attachment: fixed;
-   position: relative;
-   overflow: hidden;
-   border-radius: 0 0 45% 45% / 30%;
-  }
-  
-   .overlay{
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    color: rgb(187, 75, 187);
-    background-image: linear-gradient(135deg,black 15%,  grey 75%);
-  
-  }
-  
-  .h1-header {
-      font-family: fantasy;
-    font-style: italic;
-      font-size: 80px;
-      margin-bottom: 30px;
-  }
-  
-  .h3-header{
-      font-family: 'Open Sans', sans-serif;
-      margin-bottom: 30px;
-    color: rgb(92, 12, 92);
-  }
+*{
+  padding: 0; 
+  margin: 0; 
+  box-sizing: border-box;
+}
   
   
-  .menu {
-    z-index: 1;
-    margin-left: 10px;
-    margin-top: 20px;
-  }
   
-  .menu ul{
-    display: inline-flex;
-    padding: 0;
-    margin:auto;
-    list-style: none;
-  }
+.img-logo{
+   max-width: 150px;
+  float: left;
+  margin-top: -200px;
+}
+
+.header{
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 45% 45% / 30%;
+}
   
-  .menu a{
-    display: inline-block;
-    text-decoration: none;
-    background-color: rgb(168, 230, 75);
-    padding: 10px ;
-    color: black;
-    font-size: 20px;
-    
-  }
+.overlay{
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: rgb(187, 75, 187);
+  background-image: linear-gradient(135deg,black 15%,  grey 75%);
+}
   
-  .menu a:hover{ /*Propiedad Hover: Al pasar el ratón por encima, despues elegimos el cambio o efecto*/
-    background-color: green;
-  }
+.h1-header {
+  font-family: fantasy;
+  font-style: italic;
+  font-size: 600%;
+  margin-bottom: 30px;
+}
   
-  .menu ul li ul { /* Esto es para ocultar el desplegable y que no salga de manera automática*/
-    display: none;
-    float: right; /*mantiene menú*/
-    /*float: left  Quita el menú y se convierte en inicio*/
-  }
+.h3-header{
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
+  color: rgb(92, 12, 92);
+}
   
-  .menu  ul li a:hover + ul, .menu ul li ul:hover { /* La primera parte hace que se despligue el menú y la segunda parte nos deja interactuar/mantiene con el menú desplegado*/
-    display: inline-flex;  
-  }
+.menu {
+  z-index: 1;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+  
+.menu ul{
+  display: inline-flex;
+  padding: 0;
+  margin:auto;
+  list-style: none;
+}
+  
+.menu a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: rgb(168, 230, 75);
+  padding: 10px ;
+  color: black;
+  font-size: 20px;
+}
+  
+.menu a:hover{ /*Propiedad Hover: Al pasar el ratón por encima, despues elegimos el cambio o efecto*/
+  background-color: green;
+}
+  
+.menu ul li ul { /* Esto es para ocultar el desplegable y que no salga de manera automática*/
+  display: none;
+  float: right; /*mantiene menú*/
+  /*float: left  Quita el menú y se convierte en inicio*/
+}
+  
+.menu  ul li a:hover + ul, .menu ul li ul:hover { /* La primera parte hace que se despligue el menú y la segunda parte nos deja interactuar/mantiene con el menú desplegado*/
+  display: inline-flex;  
+}
+
+
 
 
 body{
-    background-image: url(../Img/how-to-delphi-method-in-software-engineering-functional-requirements-examples-.jpg);
-    background-size: cover;
-    height: 100%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  background-image: url(../Img/how-to-delphi-method-in-software-engineering-functional-requirements-examples-.jpg);
+  background-size: cover;
+  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section{
+  margin-left: 30px;
+  float: left;
+  width: 63%;  
 }
 
 #cabeceraFormulario{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 15%;
-    margin-top:25px;
-    margin-bottom: 10px;
-}
-
-#formulario{
-  margin-left: 15%;
-    
-}
-
-#terminos{
-    color: black;
-}
-
-#datos{
-    color: black;
-    background-color: aliceblue;
-    -moz-opacity:.7;opacity: 0.7;
-    width: 63%;
-    text-align: justify;
-    margin-left: 15%;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  
+  margin-top:25px;
+  margin-bottom: 15px;
 }
 
 .contacto{
-    background-color: bisque;
-    -moz-opacity:.9;opacity: 0.9;    
-    width: 75%;
-    
+  background-color: bisque;
+  -moz-opacity:.9;opacity: 0.9; 
 }
 
 .servicios{
-    background-color: rgb(234, 223, 243);
-    -moz-opacity:.9;opacity: 0.9;
-    width: 75%;
+  background-color: rgb(234, 223, 243);
+  -moz-opacity:.9;opacity: 0.9;
+  
 }
 
 .facturacion{
-    background-color: rgb(234, 241, 214);
-    -moz-opacity:.9;opacity: 0.9;
-    width: 75%;
+  background-color: rgb(234, 241, 214);
+  -moz-opacity:.9;opacity: 0.9;
+  
 }
 
 textarea{
-    resize: none;
-    overflow: auto;
-    width: 75%;
-    height: 80px;
+  resize: none;
+  overflow: auto;
+  width: 75%;
+  height: 80px;
 }
 
 .apell{
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .mail{
-    margin-left: 125px;
+  margin-left: 125px;
 }
 
+fieldset{
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+#terminos{
+  color: black;
+}
+
+#datos{
+  color: black;
+  background-color: aliceblue;
+  -moz-opacity:.7;opacity: 0.7;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+aside{
+  float: right;
+  border: 3px solid black;
+  width: 366px;
+  height: 561px;
+  background-color: black;
+  margin-right: 30px;
+  margin-top: 100px;
+   
+}
+#banner1{
+  height: 400px;
+  width: 360px;   
+}
+
+#banner2{
+  width: 360px; 
+}
+
+
+#copy{
+  float: left;
+  color: black;  
+  width: 63%;
+}
+
+
+@media screen and (max-width: 1300px){
+
+  body{
+    background-image: url(../Img/istockphoto-1345923219-612x612.jpg);
+      background-color: white;
+  }
+  #copy{
+    color: white;
+  }
+}
+@media screen and (max-width: 900px){
+
+  body{
+    background-image: url(../Img/Noticia-IOS.jpg);
+    background-color: rgb(8, 239, 247);
+  }
+}
