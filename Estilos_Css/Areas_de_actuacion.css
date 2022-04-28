@@ -1,10 +1,170 @@
-.div1{
-    width: 600px;
-    height: 300px;
-    background-color: black;
-    border-color: aqua 2px solid;
-}
-header{
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  body {
+    background: #97c6d2;
+    font-family: sans-serif;
+    margin: 0 auto;
+  }
+  
+  p {
+    color: #524c56;
+    font-size: 160%;
+    line-height: 155%;
+    padding: 3%;
+    text-indent: 2%;
+    text-align: justify;
+  }
+  
+  h3 {
+    font-size: 175%;
+    line-height: 155%;
+    font-weight: 500;
+    color: #214c81;
     text-align: center;
-    
+    text-transform: uppercase;
+    padding: 0;
+  }
+  
+  a {
+    color: #9900ff;
+    text-decoration: none;
+    font-weight: bold;
+  } 
+  
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    margin-bottom: -4px;
+  }
+  
+  #wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #banner-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 3% 0;
+  
+  
+  }
+
+  .texto-arriba {
+    width: 31.5%;
+    float: left;
+    padding: 10px;
+    text-align: center;
+  }
+   /* círculos */
+  .circulo {
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    background-color: #6991ac;
+    border-radius: 125px;
+    text-align: center;
+    margin-top: 3%;
+  }
+  
+  /* parte abajo*/
+  .texto-abajo {
+    width: 29%;
+    float: left;
+    margin: 2% 2%;
+  }
+  
+  .padding-medio {
+    clear: both;
+    padding: 2%;
+  }  
+  footer {
+    background: #2c3e50;
+    width: 100%;
+    overflow: auto;
+  }
+ 
+  .img-logo{
+    max-width: 150px;
+    float: left;
+    margin-top: -200px;
+
 }
+.header{
+   text-align: center;
+   width: 100%;
+   height: auto;
+   background-size: cover;
+   background-attachment: fixed;
+   position: relative;
+   overflow: hidden;
+   border-radius: 0 0 45% 45% / 30%;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+    color: rgb(187, 75, 187);
+    background-image: linear-gradient(135deg,black 15%,  grey 75%);
+
+}
+
+.h1-header {
+    font-family: fantasy;
+    font-style: italic;
+    font-size: 80px;
+    margin-bottom: 30px;
+}
+
+.h3-header{
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 30px;
+    color: rgb(92, 12, 92);
+}
+
+
+.menu {
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.menu ul{
+    display: inline-flex;
+    padding: 0;
+    margin:auto;
+    list-style: none;
+}
+
+.menu a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(168, 230, 75);
+    padding: 10px ;
+    color: black;
+    font-size: 20px;
+
+}
+
+.menu a:hover{ /*Propiedad Hover: Al pasar el ratón por encima, despues elegimos el cambio o efecto*/
+    background-color: green;
+}
+
+.menu ul li ul { /*Esto es para ocultar el desplegable y que no salga de manera automática*/
+    display: none;
+    float: right; /*mantiene menú*/
+    /*float: left  Quita el menú y se convierte en inicio*/
+}
+
+ 
+
+
+  
