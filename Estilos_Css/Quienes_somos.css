@@ -7,7 +7,9 @@
 
   
 .img-logo{
-    max-width: 150px;
+    width: 8%;
+    height: 8%;
+    min-width: 70px;
     float: left;
     margin-top: -200px;
   
@@ -37,12 +39,14 @@
     font-style: italic;
     font-size: 80px;
     margin-bottom: 30px;
+    margin-left: 3%;
 }
   
 .h3-header{
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 30px;
     color: rgb(92, 12, 92);
+    margin-left: 3%;
 }
   
   
@@ -89,122 +93,88 @@ body{
     width: 100%;
 }
 
-.div-parrafo{
-    display: inline-block;
+.empresa{
+    color: white;
+    margin: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.equipo-h1{
- text-align: center;
- margin-top: 10px;
- color: white;
+.edificio{
+    height: 50%;
+    width: 50%;
+    margin-left: 25%;    
+}
+
+.datos-empresa{
+    color: white;
+    text-align: justify;
+    width: 75%;
+    margin-left: 15%;
+    margin-top: 5px;
+}
+
+.integrantes{
+    color: white;
+    margin: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+
+}
+
+#isra{
+    height: 250px;
+    width: 250px;
+}
+
+#rick{
+    height: 250px;
+    width: 250px;
+}
+
+#pablo{
+    height: 250px;
+    width: 250px;
 }
 
 
-
-.isra-h2{
-   float: left; 
-   color: white;
-   margin-left: 3%;
-}
- 
-.Isra{
-    position: ab;
+.texto-organizacion {
+    color: white;
+    width: 30%;
     float: left;
-    width: 410px;
-    height: 513px;
-    backface-visibility: hidden;
-    transition: all  2s linear;
-    transition-delay: 10s;
-}
+    margin-left: 50px;
+    text-align: center;
+  }
 
-.Isra:active{
-    transform: rotateY(180deg);
-    transition: all  0.5s linear;
-}
-
-.texto-dentro1{
-    float: left;    
-    width: 410px;
-    height: 510px;
-    font-size: 26px;
-    font-family:  Arial, sans-serif;
-    font-style: italic;
-    background-color: red;
-}
-
-.rick-h2{
-    float: right;
-    color: white;
-}
- 
-.Rick{
-    float: right;
-    width: 410px;
-    height: 530px;
-    backface-visibility: hidden;
-    transition: all  2s linear;
-    transition-delay: 10s;
-     
-}
-
-.Rick:active{
-    transform: rotateY(180deg);
-    transition: all  0.5s linear;
- 
-}
-
-.texto-dentro2{
-    float: right;
-    width: 410px;
-    height: 510px;
-    font-size: 26px;
-    font-family:  Arial, sans-serif;
-    font-style: italic;
-    background-color: purple;
-    color: white;
-     
- 
-}
-
-.pablo-h2{
-    
-    color: white;
- 
-}
-
-.Pablo{
-    width: 410px;
-    height: 530px;
-    
-    backface-visibility: hidden;
-    transition: all  2s linear;
-    transition-delay: 10s; 
-    margin-left: auto;
-}
- 
-.Pablo:active{
-    transform: rotateY(180deg);
-    transition: all  0.5s linear;
-}
- 
-.texto-dentro3{
-    
-    width: 410px;
-    height: 520px;
-    font-size: 26px;
-    font-family:  Arial, sans-serif;
-    font-style: italic;
-    float: left;
-    margin-top: 10px;
-    margin-left: auto;
-    
-    background-color: yellow;
-} 
  
 #copy{
     color: antiquewhite;
+    float: left;
+    width: 100%;
 }
 
+@media screen and (max-width: 1300px){
+    .texto-organizacion{
+        width: 80%;
+    }
+
+    body{
+      background-color: rgb(250, 3, 147);
+    }
+    #copy{
+      color: black;
+    }
+  }
+  @media screen and (max-width: 900px){
+    .texto-organizacion{
+        width: 80%;
+    }
+  
+    body{
+      background-color: rgb(8, 239, 247);
+    }
+  }
+  
 
 
  
