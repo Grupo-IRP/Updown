@@ -81,13 +81,9 @@
   display: inline-flex;  
 }
 
-
-
-
 body{
   background-image: url(../Img/how-to-delphi-method-in-software-engineering-functional-requirements-examples-.jpg);
   background-size: cover;
-  
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -185,19 +181,32 @@ aside{
 
 
 @media screen and (max-width: 1300px){
+  section{
+    width: 90%;
+  }
+
+  aside{
+    float: left;
+  }
+
+  #copy{
+    width: 90%;
+    color: aliceblue;
+  }
+
+  #cabeceraFormulario, #terminos{
+    color: aliceblue;
+  }
 
   body{
     background-image: url(../Img/istockphoto-1345923219-612x612.jpg);
-      background-color: white;
   }
-  #copy{
-    color: white;
-  }
+ 
 }
 @media screen and (max-width: 900px){
 
   body{
     background-image: url(../Img/Noticia-IOS.jpg);
-    background-color: rgb(8, 239, 247);
+    
   }
 }
