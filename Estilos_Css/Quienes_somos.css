@@ -84,9 +84,7 @@
 }
 
 body{
-    background-color: transparent ;
-    z-index: 1;
-    position: absolute;
+    background-color: black ;
     height: 120%;
     width: 100%;
 }
@@ -101,26 +99,19 @@ body{
  color: white;
 }
 
-#contenedor{
-    height: 100%;
-    overflow: auto;
-    background-color: aqua;
-    z-index: 30;
-}
+
 
 .isra-h2{
-    position: absolute;
-    top: 450px;
-    color: white;
-    margin-left: 3%;
+   float: left; 
+   color: white;
+   margin-left: 3%;
 }
  
 .Isra{
+    position: ab;
+    float: left;
     width: 410px;
     height: 513px;
-    position: absolute;
-    top: 0;
-    left: 0%;
     backface-visibility: hidden;
     transition: all  2s linear;
     transition-delay: 10s;
@@ -132,38 +123,28 @@ body{
 }
 
 .texto-dentro1{
-    position: absolute;
-    display: block;
+    float: left;    
     width: 410px;
     height: 510px;
     font-size: 26px;
     font-family:  Arial, sans-serif;
     font-style: italic;
-    float: left;
-    margin-top: 10px;
-    left: 3%;
-    top: 480px;
     background-color: red;
 }
 
 .rick-h2{
-    position: absolute;
-    top: 450px;
-    right: 291px;
+    float: right;
     color: white;
 }
  
 .Rick{
+    float: right;
     width: 410px;
     height: 530px;
-    right: 9px;
-    top: 480px;
-    position: absolute;
     backface-visibility: hidden;
     transition: all  2s linear;
     transition-delay: 10s;
-    margin-right: 3%;
- 
+     
 }
 
 .Rick:active{
@@ -173,18 +154,12 @@ body{
 }
 
 .texto-dentro2{
-    position: absolute;
-    display: block;
+    float: right;
     width: 410px;
     height: 510px;
     font-size: 26px;
     font-family:  Arial, sans-serif;
     font-style: italic;
-    float: left;
-    margin-top: 10px;
-    margin-right: 3%;
-    right: 9px;
-    top: 480px;
     background-color: purple;
     color: white;
      
@@ -192,9 +167,7 @@ body{
 }
 
 .pablo-h2{
-    position: absolute;
-    top: 450px;
-    left: 740px;
+    
     color: white;
  
 }
@@ -202,9 +175,7 @@ body{
 .Pablo{
     width: 410px;
     height: 530px;
-    left: 740px;
-    top: 480px;
-    position: absolute;
+    
     backface-visibility: hidden;
     transition: all  2s linear;
     transition-delay: 10s; 
@@ -217,8 +188,7 @@ body{
 }
  
 .texto-dentro3{
-    position: absolute;
-    display: block;
+    
     width: 410px;
     height: 520px;
     font-size: 26px;
@@ -227,15 +197,12 @@ body{
     float: left;
     margin-top: 10px;
     margin-left: auto;
-    left: 740px;
-    top: 480px;
+    
     background-color: yellow;
 } 
  
 #copy{
     color: antiquewhite;
-    position: absolute;
-    bottom: 5px;
 }
 
 
