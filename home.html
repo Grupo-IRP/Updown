@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="Estilos_Css/Home.css">
 </head>
 <body>
+  <main>
 
-  <div id="contenedor">
+  <div class="contenedor">
         
 
         <header class="header">
           <div class="overlay">
           <h1 class="h1-header">Updown</h1>
           <h3 class="h3-header">Deja en manos expertas tus proyectos</h3>
-         <a href="home.html"> <img class="img-logo"src="Img/Logo Updown negro.png" alt="Logo"></a> 
+         <a href="home.html"> <img class="img-logo"src="/Img/logosinfondo.png" alt="Logo"></a> 
         </header>
       </div>
 
@@ -39,58 +40,137 @@
         </nav>
         <main>
          
-   <section>
+   <section id="noticias">
      <!-- Hacer una sección de noticias donde pongamos solamente los titulares
       con un enlace que baje hasta abajo
     Y posteriormente hacer la sección publicaciones con las fotos y la redacción-->
     
     <header>
       <div>
- 
-        <h1 class="body-header">Noticias</h1>   
+
+        <h1 class="body-header-Noticias">Noticias</h1>   
+
       </div>
     </header>
     <article class="articulo">
       
-      <div class="div-noticia1">
+      <div class="noticias-izq">
         <img src="Img/office.jpg" alt="">
-        <h2>Amplicación del servicio de desarrollo Android</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
-            content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
-            as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
-            have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <h2> Ampliación del departamento de desarrollo android</h2>
+        <p class="parrafo-noticias-izq">¡Nuevos integrantes llegan a la plantilla de Updown!</p>
       </div>
-      <div class="div-noticia2">
+   
+      
+
+    <article class="articulo">
+      <div class="noticias-izq">
         <img src="Img/Noticia-IOS.jpg" alt="">
         <h2>Nuevas interfaces para aplicaciones IOS</h2>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-           The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 
-          'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors
-           now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in 
-          their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        <p class="parrafo-noticias-izq">El equipo de Updown tiene listas nuevas capas de personalización para IOS</p>
+      </div>
+    
+
+
+    <article class="articulo">
+    <div class="noticias-der">
+      <img src="Img/halo.jpg" alt="">
+      <h2>Grandes videojuegos en pequeñas plataformas</h2>
+      <p class="parrafo-noticias-der">Piensa en grande y juega a lo grande</p>
+    </div>
+  
+ 
+  <article class="articulo">
+   <div class="noticias-der">
+        <img src="Img/Ecommerce-Thumbnail.jpg" alt="">
+        <h2>¡Nueva apertura de nuestra tienda online!</h2>
+        <p class="parrafo-noticias-der">Proximamente en las mejores empresas</p>
+        
       </div>
     </article>
       
     
       <footer class="section-footer">
         <div id="Localizacion">
-          <h3>Aquí es donde puedes visitarnos personalmente</h3>
+          <h3 id="h3-localizacion">Aquí es donde puedes visitarnos personalmente</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2491.056655551673!2d-0.6569215753417039!3d51.36525514309784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487678b56c2ce5b1%3A0x7caf68954cd9eda!2sUpdown%20Hill%2C%20Windlesham%2C%20Reino%20Unido!5e0!3m2!1ses!2ses!4v1651051803859!5m2!1ses!2ses"
          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </footer>
   </section>
 
+    <section>
+      <header class="body-header-publicaciones">
+        <div>
+          <h1>Publicaciones</h1>
+        </div>
+      </header>
+      
+      <article class="articulo">
+        <div class="div-publicaciones">
+          <img src="Img/office.jpg" alt="">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+             content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+             as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+             have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+      </article>
+
+      <article class="articulo">
+        <div class="div-publicaciones">
+          <img src="Img/Noticia-IOS.jpg" alt="" id="Publi-ios">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+             content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+             as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+             have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+        </div>
+      </article>
+
+      <article class="articulo">
+        <div class="div-publicacion2">
+          <img src="Img/halo.jpg" alt="">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+             content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+             as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+             have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+      </article>
+
+      <article class="articulo">
+        <div class="div-publicacion2">
+          <img src="Img/e-commerce.webp" alt="">
+          <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+             content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum 
+             as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+             have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+
+        </div>
+      </article>
+      
+
+    </section>
+
+    <aside>
+      
+    <img src="" alt="">
+    
+
+    
+    </aside>
+  
+
     </main>
 
-        <aside>
-
-        </aside>
+ 
 
         <footer>
 
         </footer>
+
   </div>
     
 </body>

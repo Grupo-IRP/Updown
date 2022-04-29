@@ -1,13 +1,14 @@
-
 *{padding: 0; 
   margin: 0; 
   box-sizing: border-box;
 }
 
-body{height: 900px;}
+
 
 .img-logo{
-  max-width: 150px;
+  width: 8%;
+  height: 8%;
+  min-width: 70px;
   float: left;
   margin-top: -200px;
 
@@ -23,26 +24,29 @@ body{height: 900px;}
  border-radius: 0 0 45% 45% / 30%;
 }
 
- .overlay{
+.overlay{
   width: 100%;
   height: 100%;
   padding: 50px;
-  color: rgb(187, 75, 187);
   background-image: linear-gradient(135deg,black 15%,  grey 75%);
-
 }
 
 .h1-header {
-	font-family: fantasy;
+  color: rgb(187, 75, 187);
+  font-family: fantasy;
   font-style: italic;
-	font-size: 80px;
-	margin-bottom: 30px;
+  font-size: 80px;
+  width: 50%;
+  margin-bottom: 30px;
+  margin-left: 25%;
+  margin-right:10px ;
 }
 
 .h3-header{
-	font-family: 'Open Sans', sans-serif;
-	margin-bottom: 30px;
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 30px;
   color: rgb(92, 12, 92);
+  margin-left: 3%;
 }
 
 
@@ -83,74 +87,153 @@ body{height: 900px;}
   display: inline-flex;  
 }
 
-.body-header{
-  margin-top: 40px;
+.body-header-Noticias{
+  margin-top: 50px;
   margin-left: 50px;
+  font-size: 50PX;
+  font-family: Impact;
   
 }
-.div-noticia1 img{
-  max-width: 600px;
-  height: auto;
-}
 
-.div-noticia1{
+.noticias-izq{
   float: left;
+  width: 60%;
+  height: 140px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: grey
+}
 
+.noticias-izq img{
+  width: 250px;
+  height: 140px;
+  float: left;
+}
 
-  width: 600px;
+.noticias-der{
+  float: left;
+  width: 100%;
+  height: 140px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background-color: grey
+}
+
+.noticias-der img{
+  width: auto;
+  height: auto;
+  float: left;
+}
+
+.body-header-publicaciones{
+  margin-top: 40px;
+  margin-left: 50px;
+  font-size: 40PX;
+}
+.div-publicaciones{
+  float: left;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: 680px;
   height: 545px;
-
-  margin-top: 20px;
-
-  background-color: aqua;
-
+  background-color: black;
 }
-.div-noticia1 h2{
-  margin-top: 20px;
-  margin-left: 10px; 
+.div-publicaciones img{
+  max-width: 680px;
+  height: 383px;
 }
 
-.div-noticia1 p{
+
+
+.div-publicaciones p{
   margin-left: 5px;
   margin-top: 20px;
-  border: #CC673B 2px solid;
+  margin-right: 5px;
+  text-align: justify;
+  color: white;
+
 }
 
-.div-noticia2 img{
-max-width: 680px;
-height: auto;
-}
 
-.div-noticia2{
+.div-publicacion2{
   float: left;
   margin-left: 20px;
   margin-top: 20px;
   width: 680px;
   height: 545px;
-  background-color: aqua;
+  background-color: black;
 
 }
-.div-noticia2 h2{
-  margin-top: 20px;
-  margin-left: 20px;
-  
-}
-.div-noticia2 p{
+.div-publicacion2 img{
+  max-width: 680px;
+  height: auto;
+  }
+
+.div-publicacion2 p{
   margin-left: 5px;
+  margin-right: 5px;
   margin-top: 20px;
-  border: #CC673B 2px solid;
+  text-align: justify;
+  color: white;
+
+}
+
+
+#h3-localizacion{
+  width: 63%;
   
 }
 #Localizacion{
   
 }
 .section-footer{
-  margin-top: 5%;
+  margin-top: 10%;
 
 
 }
 .articulo{
-  display: inline-block;
+  
+}
+
+
+ 
+aside{
+  float: left;
+}
+
+@media screen and (max-width: 1300px){
+  .texto-organizacion{
+      width: 80%;
+  }
+
+  body{
+    background-color: rgb(250, 3, 147);
+  }
+  #copy{
+    color: black;
+  }
+}
+@media screen and (max-width: 900px){
+
+  body{
+    background-color: rgb(8, 239, 247);
+  }
+
+}
+
+@media screen and (max-width: 400px){
+
+  body{
+    background-color: rgb(0, 218, 91);
+  }
+  .img-logo{
+      margin-left: -40px;
+  }
+
+  .h1-header {
+      margin-left: 10%;
+  }
+
 }
 
 
