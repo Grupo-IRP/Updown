@@ -3,16 +3,19 @@
     margin: 0; 
     box-sizing: border-box;
 }
-
-.img-logo{
+/*da propiedades a la imagen del logo de la cabecera de la web*/
+.img-logo{ 
+    /*al poner los valores en porcentajes varía el tamaño al redmensionar*/
     width: 8%;
-    height: 8%;
-    min-width: 70px;
+    height: 8%; 
+    /*fija un valos mínmo de ancho para que si redimensiona a valores muy pequeños no se haga demasiado pequeño el logo*/
+    min-width: 70px; 
     float: left;
     margin-top: -200px;
   
 }
-.header{
+/*le da formato a la cabecera*/
+.header{ 
    text-align: center;
    width: 100%;
    height: auto;
@@ -20,17 +23,14 @@
    background-attachment: fixed;
    position: relative;
    overflow: hidden;
-   border-radius: 0 0 45% 45% / 30%;
+   /*hace la curva de la cabecera*/
+   border-radius: 0 0 45% 45% / 30%; 
+   padding: 50px;
+   /*hace el degradado*/
+   background-image: linear-gradient(135deg,black 15%,  grey 75%); 
 }
-  
-.overlay{
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    background-image: linear-gradient(135deg,black 15%,  grey 75%);
-}
-  
-.h1-header {
+ /*le da el estilo de la primera linea de texto de cabecera*/ 
+.h1-header { 
     color: rgb(187, 75, 187);
     font-family: fantasy;
     font-style: italic;
@@ -40,29 +40,29 @@
     margin-left: 25%;
     margin-right:10px ;
 }
-  
-.h3-header{
+/*le da el estilo de la segunda linea de texto de cabecera*/  
+.h3-header{ 
     font-family: 'Open Sans', sans-serif;
     margin-bottom: 30px;
     color: rgb(92, 12, 92);
     margin-left: 3%;
 }
   
-  
-.menu {
+/*coloca en menu en el nav*/  
+.menu { 
     z-index: 1;
     margin-left: 10px;
     margin-top: 20px;
 }
-  
-.menu ul{
+/*da colocacion y tipo de lista desordenada*/  
+.menu ul{ 
     display: inline-flex;
     padding: 0;
     margin:auto;
     list-style: none;
 }
-  
-.menu a{
+/*de formato y estilo a las opciones del menú*/  
+.menu a{ 
     display: inline-block;
     text-decoration: none;
     background-color: rgb(168, 230, 75);
@@ -71,123 +71,129 @@
     font-size: 20px;
     
 }
-  
-.menu a:hover{ /*Propiedad Hover: Al pasar el ratón por encima, despues elegimos el cambio o efecto*/
+/*Propiedad Hover: Al pasar el ratón por encima, despues elegimos el cambio o efecto*/  
+.menu a:hover{ 
     background-color: green;
 }
-  
-.menu ul li ul { /* Esto es para ocultar el desplegable y que no salga de manera automática*/
+/* Esto es para ocultar el desplegable y que no salga de manera automática*/  
+.menu ul li ul { 
     display: none;
-    float: right; /*mantiene menú*/
-    /*float: left  Quita el menú y se convierte en inicio*/
+    /*mantiene menú*/
+    float: right; 
 }
-  
-.menu  ul li a:hover + ul, .menu ul li ul:hover { /* La primera parte hace que se despligue el menú y la segunda parte nos deja interactuar/mantiene con el menú desplegado*/
+/* La primera parte hace que se despligue el menú y la segunda parte nos deja interactuar/mantiene con el menú desplegado*/  
+.menu  ul li a:hover + ul, .menu ul li ul:hover { 
     display: inline-flex;  
 }
-
-body{
-    background-color: black ;
-    height: 120%;
-    width: 100%;
+/*pone el color de fondo*/
+body{ 
+    background-color: black ;   
 }
-
-.empresa{
+/*da color, fuente y colocación al texto*/
+.empresa{ 
     color: white;
     margin: 25px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
-
-.edificio{
+/* dimensiona y coloca la foto*/
+.edificio{ 
     height: 50%;
     width: 50%;
     margin-left: 25%;    
 }
-
-.datos-empresa{
+/*da color y colocación al texto*/
+.datos-empresa{ 
     color: white;
     text-align: justify;
     width: 75%;
     margin-left: 15%;
     margin-top: 5px;
 }
-
-.integrantes{
+/*da color, fuente y colocación al texto*/
+.integrantes{ 
     color: white;
     margin: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 
 }
-
-#isra{
+/*dimensiona la foto*/
+#isra{ 
+    height: 250px;
+    width: 250px;
+}
+/*dimensiona la foto*/
+#rick{ 
+    height: 250px;
+    width: 250px;
+}
+/*dimensiona la foto*/
+#pablo{ 
     height: 250px;
     width: 250px;
 }
 
-#rick{
-    height: 250px;
-    width: 250px;
-}
-
-#pablo{
-    height: 250px;
-    width: 250px;
-}
-
-
-.texto-organizacion {
+/*da color y colocación a los artículos*/
+.texto-organizacion { 
     color: white;
     width: 30%;
     float: left;
     margin-left: 50px;
     text-align: center;
-  }
+}
 
- 
-#copy{
+/*da color y colocación al texto*/
+#copy{ 
     color: antiquewhite;
     float: left;
     width: 100%;
 }
-
-@media screen and (max-width: 1300px){
-    .texto-organizacion{
-        width: 80%;
+/*cambios que surtiran efecto si la pantalla baja de 1300px de ancho*/
+@media screen and (max-width: 1300px){ 
+    .texto-organizacion{ 
+        /*aumenta el tamaño de los artículos para su mejor visualización*/
+        width: 80%; 
     }
 
     body{
-      background-color: rgb(250, 3, 147);
+        /*cambia el color de fondo*/
+        background-color: rgb(250, 3, 147); 
     }
     #copy{
-      color: black;
+        /*cambia el color del texto*/
+        color: black; 
     }
   }
+  /*cambios que surtiran efecto si la pantalla baja de 900px de ancho*/
   @media screen and (max-width: 900px){
     .texto-organizacion{
         width: 80%;
     }
   
     body{
-      background-color: rgb(8, 239, 247);
+        /*cambia el color de fondo*/
+        background-color: rgb(8, 239, 247); 
     }
     
   }
-
-  @media screen and (max-width: 400px){
+  /*cambios que surtiran efecto si la pantalla baja de 400px de ancho*/
+  @media screen and (max-width: 400px){ 
     .texto-organizacion{
         width: 80%;
     }
   
     body{
-      background-color: rgb(0, 218, 91);
+        /*cambia el color de fondo*/
+        background-color: rgb(0, 218, 91); 
     }
     .img-logo{
+        /*recoloca la imagen del logo*/
         margin-left: -40px;
     }
 
     .h1-header {
+        /*recoloca el texto de la cabecera*/
         margin-left: 10%;
     }
     
