@@ -1,26 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=devide-width, initial-scale=1.0">
         <title>Quienes somos</title>
         <link rel="stylesheet" href="../Estilos_Css/Quienes_somos.css">
+    </head>
     <body>
         <div id="contenedor">
-            <header class="header">
-                <div class="overlay">
-                    <h1 class="h1-header">Updown</h1>
-                    <h3 class="h3-header">Deja en manos expertas tus proyectos</h3>
-                    <a href="home.html"> <img class="img-logo"src="Img/Logo Updown negro.png" alt="Logo"></a> 
-                </div>
+            <header class="header"> <!--cabecera de la web-->
+                <h1 class="h1-header">Updown</h1>
+                <h3 class="h3-header">Deja en manos expertas tus proyectos</h3>
+                <a href="home.html"><img class="img-logo" src="Img/logosinfondo.png" alt="Logo"></a> <!--logo de la web con enlace que lleva a inicio-->
             </header>
     
-
             <nav class="menu"> <!-- Menú desplegable-->
-                <ul>
-                    <li><a href="">Menú</a>
-                        <ul>
-
+                <ul> <!-- abre una lista desordenada-->
+                    <li><a href="">Menú</a><!-- elemento de lista para "cabecera" de menú -->
+                        <ul> <!-- abre otra lista desordenada anidada dentro del elemento de lista anterior-->
+                            <!-- elementos del la lista que son las opciones que componen el menú-->
                             <li><a href="home.html">Inicio</a></li>
                             <li><a href="#Noticias">Noticias</a></li>
                             <li><a href="Quienes_somos.html" target="blank">Quienes somos</a></li>
@@ -28,23 +27,19 @@
                             <li><a href="Areas_de_actuacion.html">Areas de Actuación</a></li>
                             <li><a href="home.html#Localizacion">Localización</a></li>
                             <li><a href="Contacto.html" target="blank">Contacto</a></li>
-
                         </ul>
                     </li>
-
                 </ul>
             </nav>
 
-            <section>
+            <main>
                 <header>
-
-                    <h1 class="empresa">Nuestra Empresa:</h1>
-
+                    <h1 class="empresa">Nuestra Empresa:</h1> <!--título de la página-->
                 </header>
                 
-                <article >
-
-                    <img class="edificio" src="Img/edificio Updown.png" alt="Edificio Updown">
+                <section> <!--foto y texto que describe la empresa-->
+               
+                    <img class="edificio" src="Img/edificio_Updown.png" alt="Edificio Updown">
 
                     <p class="datos-empresa">Lorem fistrum te voy a borrar el cerito llevame al sircoo ese que llega benemeritaar qué dise usteer. Condemor sexuarl se calle ustée condemor apetecan.
                         Caballo blanco caballo negroorl apetecan apetecan de la pradera ahorarr caballo blanco caballo negroorl diodeno torpedo. Benemeritaar por la gloria de
@@ -58,22 +53,16 @@
                         te voy a borrar el cerito se calle ustée jarl no te digo trigo por no llamarte Rodrigor benemeritaar me cago en tus muelas te voy a borrar el cerito. 
                         Hasta luego Lucas papaar papaar benemeritaar está la cosa muy malar apetecan condemor amatomaa benemeritaar por la gloria de mi madre ese hombree.
                     </p>
-                </article>
+                    
+                </section>
 
-                <footer>
+                <section>
 
-                    <h2 class="integrantes">Organización</h2>
+                    <h2 class="integrantes">Organización</h2> <!--cabecera de sección-->
 
-                    <div class="imagenes">
+                    <article class="texto-organizacion"> <!--artículo con imagen, cabecera y descripción de integrante-->
                         
-                        
-                        
-                    </div>
-
-
-                    <div class="texto-organizacion">
-                        
-                        <img id="isra" src="Img/Isra circulo.png" alt="Isra">
+                        <img id="isra" src="Img/Isra_circulo.png" alt="Isra">
                                                
                         <h3>Israel Serrano</h3>
                         <p>Reparador jefe del grupo, más de 20 años de experiencia reparando elementos eléctronicos, no hay tamagotchi que se le resista, 
@@ -81,34 +70,34 @@
                             trabaja muy bien en equipo. Es un gran conocedor de bares en puente de Vallecas, tiene dos niños pequeños y un coche a todo riesgo que cada noche 
                             se expone a ser golpeado porque hay gente muy pinzada en la zona en la que habita.
                         </p>
-                    </div>
-                    <div class="texto-organizacion">
+                    </article>
+                    <article class="texto-organizacion"> <!--artículo con imagen, cabecera y descripción de integrante-->
                        
-                        <img id="rick" src="Img/rick circulo.png" alt="Rick">
+                        <img id="rick" src="Img/rick_circulo.png" alt="Rick">
                         <h3>Ricardo Alvarado</h3>
                         <p>Verificador jefe del grupo, su visto bueno antes de la entrega es indispensable. Le llamamos Rick pero también es conocido como 
                             Teis por sus allegados más cercanos. Tiene un Ford con una repro, ya que el escape tiene que ser libre para que el asfalto vibre. Conoce los mejores 
                             anéstesicos tradicionales cuando tienes un dolor. El fala Galego pero también inglés porque vive en Luxemburgo, donde nunca pasa nada hasta que un 
                             día pasa. Cuenta la leyenda que tras romperse la rodilla está se reparo mágicamente.
                         </p>
-                    </div>
-                    <div class="texto-organizacion">
+                    </article>
+                    <article class="texto-organizacion"> <!--artículo con imagen, cabecera y descripción de integrante-->
                         
-                        <img id="pablo" src="Img/Pablo circulo.png" alt="Pablo">
+                        <img id="pablo" src="Img/Pablo_circulo.png" alt="Pablo">
                         <h3>Pablo Baldazo</h3>
                         <p>Gestor de reuniones del grupo, organiza los horarios y las quedadas para que todos puedan asistir, su nacionalidad es Española, 
                             pero en los escritos importantes pone Pablov. Métodico hasta que se demuestre lo contrario, grandes dotes de paciencia al igual que grandes manos 
                             y pies. Dice ser programador y también saber contar hasta rojo. LLeva un coche más hecho polvo que los gitanos que le dieron una hostia en la aleta 
                             trasera. Cuenta la leyenda que se tiró toda la mañana para hacer la "O" con un canuto.
                         </p>
-                    </div>
-                   
-                                                     
-                </footer>
-            </section>
-            <footer id="copy">
+                    </article>
+                </section>
+            </main>
+
+            <footer id="copy"> <!--pie de página-->
                 <p>&COPY;Updown</p>
             </footer>
+
         </div>  
     </body>
 </html>      

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,19 +9,17 @@
 </head>
 <body>
     <div id="contenedor">
-        <header class="header">
-            <div class="overlay">
-                <h1 class="h1-header">Updown</h1>
-                <h3 class="h3-header">Deja en manos expertas tus proyectos</h3>
-                <a href="home.html"> <img class="img-logo"src="Img/Logo Updown negro.png" alt="Logo"></a> 
-            </div>  
+        <header class="header"> <!--cabecera de la web-->
+            <h1 class="h1-header">Updown</h1>
+            <h3 class="h3-header">Deja en manos expertas tus proyectos</h3>
+            <a href="home.html"><img class="img-logo" src="Img/logosinfondo.png" alt="Logo"></a> <!--logo de la web con dirección relativa que lleva a inicio-->
         </header>
     
-        <nav class="menu"> <!-- Menú desplegable-->
-            <ul>
-                <li><a href="">Menú</a>
-                    <ul>
-
+        <nav class="menu"> <!-- menú desplegable-->
+            <ul>  <!-- abre una lista desordenada-->
+                <li><a href="">Menú</a> <!-- elemento de lista para "cabecera" de menú -->
+                    <ul>  <!-- abre otra lista desordenada anidada dentro del elemento de lista anterior-->
+                         <!-- elementos del la lista que son las opciones que componen el menú-->
                         <li><a href="home.html">Inicio</a></li>
                         <li><a href="#Noticias">Noticias</a></li>
                         <li><a href="Quienes_somos.html" target="blank">Quienes somos</a></li>
@@ -29,33 +27,36 @@
                         <li><a href="Areas_de_actuacion.html">Areas de Actuación</a></li>
                         <li><a href="home.html#Localizacion">Localización</a></li>
                         <li><a href="Contacto.html" target="blank">Contacto</a></li>
-
                     </ul>
                 </li>
-
             </ul>
         </nav>
-        
-        <section>
+        <main>
+            
             <header>
-                <h1 id="cabeceraFormulario">Formulario de Contacto</h1>
+                    <h1 id="cabeceraFormulario">Formulario de Contacto</h1><!--título del formulario-->
             </header>
-
-            <article>
+            
+        
+            <section>
+                <!--creación del formulario-->
                 <form action="envíoFormulario.jsp" method="get" id="formulario">
-                    <div class="contacto">
-                        <fieldset>
-                            <legend><h2>Datos de Contacto</h2></legend>
-
+                
+                    <article class="contacto"> 
+                        <!--formulario de tipo texto para rellenar datos de contacto-->
+                        <fieldset> <!--recuadro que rodea este formulario-->
+                            <legend><h2>Datos de Contacto</h2></legend> <!--título del formulario-->
+                            <!--selector para saber el tipo de cliente-->
                             Tipo de Cliente: <select name="tipocliente">
                                 <option value="part" selected>Particular</option>
                                 <option value="emp">Empresa</option>
                             </select>
                             <br/>
                             <br/>
+                            <!--campos de texto a rellenar por el usuario-->
                             Nombre o Razón Social: <input type="text" name="nombre" required/>
                             <label class="apell" for="apellidos">Apellidos:</label>
-                            <input type="text" name="apellidos"/>
+                            <input id="apellidos" type="text" name="apellidos"/>
                             <br/>
                             <br/>  
                             DNI/CIF: <input type="text" name="DNI" required/>
@@ -63,17 +64,20 @@
                             <br/>
                             Teléfono: <input placeholder="Escriba su nº de teléfono" type="tel" name="telefono" required/>
                             <label class="mail" for="email">Email:</label>
-                            <input type="email" name="email" required/>
+                            <input id="email" type="email" name="email" required/>
                             <br/>
                         </fieldset>
-                    </div>
+                    </article>
 
-                    <div class="servicios">
-                        <fieldset>
-                            <legend><h2>Contratación de servicios</h2></legend>
+                    <article class="servicios">
+                        <!--formulario de tipo "checkbox" para seleccionar uno o varios servicios con campo de texto libre-->
+                        <fieldset> <!--recuadro que rodea este formulario-->
+                            <legend><h2>Contratación de servicios</h2></legend> <!--título del formulario-->
 
-                            <label for="servicios"><h3>Servicios a contratar</h3></label>
-            
+                            <!--checkbox con las distintas opciones-->
+                            <label for="servicios"><b>Servicios a contratar</b></label>
+                            <br/>   
+                            <br/>           
                             <input type="checkbox" name="servicios" value="W"/> Desarrollo Web <br/>
                             <input type="checkbox" name="servicios" value="B"/> Desarrollo BBDD <br/>
                             <input type="checkbox" name="servicios" value="A"/> Desarrollo App Android <br/>
@@ -82,22 +86,26 @@
                             <input type="checkbox" name="servicios" value="H"/> HelpDesk (customer support)<br/>
                             <br/>
                             <br/>
+                            <!--area de texto libre para rellenar por el usuario-->
                             <label for="descproy">Descripción de Proyecto: </label>
                             <br/>
-                            <textarea placeholder="Describe detalladamente el proyecto que quieres contratar" name="descproy" id="txt"  required></textarea>
+                            <textarea placeholder="Describe detalladamente el proyecto que quieres contratar" name="descproy" id="descproy"  required></textarea>
                         </fieldset>
-                    </div>
+                    </article>
 
-                    <div class="facturacion">
-                        <fieldset>
-                            <legend><h2>Datos de Facturación</h2></legend>
-
-                            <input type="radio" name="facturación" value="FYes"/> Marca esta opción si los datos de facturación son los mismos que los datos de contacto <br/>
+                    <article class="facturacion"> 
+                        <!--formulario de tipo texto para rellenar datos de facturación-->
+                        <fieldset> <!--recuadro que rodea este formulario-->
+                            <legend><h2>Datos de Facturación</h2></legend> <!--título del formulario-->
+                            
+                            <!--botón a marcar si selecionamos mismos datos de facturación que de contacto-->
+                            <input type="radio" name="facturación" value="FYes"/> Marca esta opción si los datos de facturación son los mismos que los datos de contacto <br/> 
                             <br/>
                             <br/>
-                            Nombre o Razón Social: <input type="text" name="nombref" />
+                            <!--campos de texto a rellenar por el usuario-->
+                            Nombre o Razón Social: <input type="text" name="nombref"/>
                             <label class="apell" for="apellidosf">Apellidos: </label>
-                            <input type="text" name="apellidosf"/>
+                            <input id="apellidosf" type="text" name="apellidosf"/>
                             <br/>
                             <br/>   
                             DNI/CIF: <input type="text" name="DNIf" />
@@ -105,45 +113,48 @@
                             <br/>
                             Teléfono: <input placeholder="Escriba su nº de teléfono" type="tel" name="telefonof" />
                             <label class="mail" for="emailf">Email:</label>
-                            <input type="email" name="emailf" />
+                            <input id="emailf" type="email" name="emailf" />
                             <br/>
 
                         </fieldset>
-                    </div>
+                    </article>
                     <br/>
-                    <div id="terminos">
-                        <p><b>Acepta los términos y condiciones de uso</b></p> 
+                    <article id="terminos"> <!--casilla para aceptar t&c con enlace al documento en PDF-->
+                        <h4>Acepta los términos y condiciones de uso</h4> 
                         <a href="Docs/Terminos_de_uso_y_condiciones_generales_de_contratacion.pdf" target="blank" title="Licencia de uso">Terminos y condiciones</a>
-                        <input type="checkbox" name="Terminos" value="Y" required>
-                    </div>
+                        <input type="checkbox" name="Terminos" value="Y" required><!--es requerida marcar la casilla para enviar el formulario-->
+                    </article>
                     <br/>
                     <br/>
-                    <div id="botones">
+                    <div id="botones"> <!--botones de enviar y resetear el formulario-->
                         <input type="submit" value="Enviar"/>
                         <input type="reset" value="Limpiar formulario"/>
                     </div>
 
                 </form>
-            </article>
+            </section>
 
-            <footer id="datos">
-                <p><b>Protección de Datos:</b> Updown informa a los usuarios de que sus datos personales no serán 
-                cedidos a terceras organizaciones, con la salvedad de que dicha cesión de datos este amparada en 
-                una obligación legal o cuando la prestación de un servicio implique la necesidad de una relación 
-                contractual con un encargado de tratamiento. En este último caso, solo se llevará a cabo la cesión 
-                de datos al tercero cuando Updown disponga del consentimiento expreso del usuario.
-                </p>
+            <section>
+                <footer id="datos"> <!--pie de formulario con la protección de datos-->
+                    <p><b>Protección de Datos:</b> Updown informa a los usuarios de que sus datos personales no serán 
+                    cedidos a terceras organizaciones, con la salvedad de que dicha cesión de datos este amparada en 
+                    una obligación legal o cuando la prestación de un servicio implique la necesidad de una relación 
+                    contractual con un encargado de tratamiento. En este último caso, solo se llevará a cabo la cesión 
+                    de datos al tercero cuando Updown disponga del consentimiento expreso del usuario.
+                    </p>
     
-            </footer>
+                </footer>
+            </section>
+        </main>
 
-        </section>
-        <aside>
-            <a href="Areas_de_actuacion.html"><img id="banner1" src="Img/banner desarrollo.PNG" alt="banner1"></a>
-            <a href="#"><img id="banner2" src="Img/banner rrss.PNG" alt="banner2"></a>
+        <aside> <!--banner de autopublicidad-->
+            <a href="Areas_de_actuacion.html"><img id="banner1" src="Img/banner_desarrollo.PNG" alt="banner1"></a><!--envia a la pagina de areas de actuacion-->
+            <a href="https://linktr.ee/updown_" target="blank"><img id="banner2" src="Img/banner_rrss.PNG" alt="banner2"></a> <!--envia a traves de una dirección 
+                absoluta a web externa con las rrss-->
         </aside>
 
             
-        <footer id="copy">
+        <footer id="copy"> <!--pie de página con copia registrada-->
             <p>&COPY;Updown</p>
         </footer>
 
