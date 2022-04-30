@@ -47,22 +47,26 @@
                         <fieldset> <!--recuadro que rodea este formulario-->
                             <legend><h2>Datos de Contacto</h2></legend> <!--título del formulario-->
                             <!--selector para saber el tipo de cliente-->
-                            Tipo de Cliente: <select name="tipocliente">
+                            <label for="tipocliente">Tipo de Cliente: </label>
+                            <select id="tipocliente" name="tipocliente">
                                 <option value="part" selected>Particular</option>
                                 <option value="emp">Empresa</option>
                             </select>
                             <br/>
                             <br/>
                             <!--campos de texto a rellenar por el usuario-->
-                            Nombre o Razón Social: <input type="text" name="nombre" required/>
+                            <label for="nombre">Nombre o Razón Social: </label>
+                            <input id="nombre" type="text" name="nombre" required/>
                             <label class="apell" for="apellidos">Apellidos:</label>
                             <input id="apellidos" type="text" name="apellidos"/>
                             <br/>
-                            <br/>  
-                            DNI/CIF: <input type="text" name="DNI" required/>
+                            <br/> 
+                            <label for="DNI">DNI/CIF: </label> 
+                            <input id="DNI" type="text" name="DNI" required/>
                             <br/>
                             <br/>
-                            Teléfono: <input placeholder="Escriba su nº de teléfono" type="tel" name="telefono" required/>
+                            <label for="telefono">Teléfono: </label>
+                            <input id="telefono" placeholder="Escriba su nº de teléfono" type="tel" name="telefono" required/>
                             <label class="mail" for="email">Email:</label>
                             <input id="email" type="email" name="email" required/>
                             <br/>
@@ -99,19 +103,22 @@
                             <legend><h2>Datos de Facturación</h2></legend> <!--título del formulario-->
                             
                             <!--botón a marcar si selecionamos mismos datos de facturación que de contacto-->
-                            <input type="radio" name="facturación" value="FYes"/> Marca esta opción si los datos de facturación son los mismos que los datos de contacto <br/> 
+                            <input type="radio" name="facturación" value="FYes"/><b> Marca esta opción si los datos de facturación son los mismos que los datos de contacto </b> <br/> 
                             <br/>
                             <br/>
                             <!--campos de texto a rellenar por el usuario-->
-                            Nombre o Razón Social: <input type="text" name="nombref"/>
+                            <label for="nombref">Nombre o Razón Social: </label>
+                            <input id="nombref" type="text" name="nombref"/>
                             <label class="apell" for="apellidosf">Apellidos: </label>
                             <input id="apellidosf" type="text" name="apellidosf"/>
                             <br/>
-                            <br/>   
-                            DNI/CIF: <input type="text" name="DNIf" />
+                            <br/>  
+                            <label for="DNIf">DNI/CIF: </label> 
+                            <input id="DNIf" type="text" name="DNIf"/>
                             <br/>
                             <br/>
-                            Teléfono: <input placeholder="Escriba su nº de teléfono" type="tel" name="telefonof" />
+                            <label for="telefonof">Teléfono: </label>
+                            <input id="telefonof" placeholder="Escriba su nº de teléfono" type="tel" name="telefonof" />
                             <label class="mail" for="emailf">Email:</label>
                             <input id="emailf" type="email" name="emailf" />
                             <br/>
@@ -148,8 +155,8 @@
         </main>
 
         <aside> <!--banner de autopublicidad-->
-            <a href="Areas_de_actuacion.html"><img id="banner1" src="Img/banner_desarrollo.PNG" alt="banner1"></a><!--envia a la pagina de areas de actuacion-->
-            <a href="https://linktr.ee/updown_" target="blank"><img id="banner2" src="Img/banner_rrss.PNG" alt="banner2"></a> <!--envia a traves de una dirección 
+            <a href="Areas_de_actuacion.html"><img id="banner1" src="Img/banner_desarrollo.PNG" alt="banner1" title="Nuestros servicios"></a><!--envia a la pagina de areas de actuacion-->
+            <a href="https://linktr.ee/updown_" target="blank"><img id="banner2" src="Img/banner_rrss.PNG" alt="banner2" title="Nuestras RRSS"></a> <!--envia a traves de una dirección 
                 absoluta a web externa con las rrss-->
         </aside>
 
