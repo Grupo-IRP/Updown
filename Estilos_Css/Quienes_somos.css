@@ -155,7 +155,6 @@ body{
         /*aumenta el tamaño de los artículos para su mejor visualización*/
         width: 80%; 
     }
-
     body{
         /*cambia el color de fondo*/
         background-color: rgb(250, 3, 147); 
@@ -167,10 +166,6 @@ body{
   }
   /*cambios que surtiran efecto si la pantalla baja de 900px de ancho*/
   @media screen and (max-width: 900px){
-    .texto-organizacion{
-        width: 80%;
-    }
-  
     body{
         /*cambia el color de fondo*/
         background-color: rgb(8, 239, 247); 
@@ -179,10 +174,6 @@ body{
   }
   /*cambios que surtiran efecto si la pantalla baja de 400px de ancho*/
   @media screen and (max-width: 400px){ 
-    .texto-organizacion{
-        width: 80%;
-    }
-  
     body{
         /*cambia el color de fondo*/
         background-color: rgb(0, 218, 91); 
@@ -191,7 +182,6 @@ body{
         /*recoloca la imagen del logo*/
         margin-left: -40px;
     }
-
     .h1-header {
         /*recoloca el texto de la cabecera*/
         margin-left: 10%;

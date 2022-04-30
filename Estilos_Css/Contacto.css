@@ -207,16 +207,12 @@ aside{
 }
 /*cambios que surtiran efecto si la pantalla baja de 900px de ancho*/
 @media screen and (max-width: 900px){
-  main{
-    width: 90%;
-  }
-
+  
   body{
    background-image: url(../Img/Noticia-IOS.jpg);
     
   }
   aside{
-    float: left;
     /*separa el aside del borde de la pantalla por el margen izquierdo*/
     margin-left: 20px;
   }
@@ -224,7 +220,6 @@ aside{
 /*cambios que surtiran efecto si la pantalla baja de 400px de ancho*/
 @media screen and (max-width: 400px){
   main{
-    width: 90%;
     /*separa el main del borde de la pantalla por el margen izquierdo*/
     margin-left: 15px;
   }
@@ -234,7 +229,6 @@ aside{
   }
 
   aside{
-    float: left;
     margin-left: 5px;
   }
 
