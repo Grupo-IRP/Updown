@@ -2,18 +2,19 @@
   margin: 0; 
   box-sizing: border-box;
 }
-
-
-
-.img-logo{
+/*da propiedades a la imagen del logo de la cabecera de la web*/
+.img-logo{ 
+  /*al poner los valores en porcentajes varía el tamaño al redmensionar*/
   width: 8%;
-  height: 8%;
-  min-width: 70px;
+  height: 8%; 
+  /*fija un valos mínmo de ancho para que si redimensiona a valores muy pequeños no se haga demasiado pequeño el logo*/
+  min-width: 70px; 
   float: left;
   margin-top: -200px;
 
 }
-.header{
+/*le da formato a la cabecera*/
+.header{ 
  text-align: center;
  width: 100%;
  height: auto;
@@ -21,17 +22,14 @@
  background-attachment: fixed;
  position: relative;
  overflow: hidden;
- border-radius: 0 0 45% 45% / 30%;
+ /*hace la curva de la cabecera*/
+ border-radius: 0 0 45% 45% / 30%; 
+ padding: 50px;
+ /*hace el degradado*/
+ background-image: linear-gradient(135deg,black 15%,  grey 75%); 
 }
-
-.overlay{
-  width: 100%;
-  height: 100%;
-  padding: 50px;
-  background-image: linear-gradient(135deg,black 15%,  grey 75%);
-}
-
-.h1-header {
+/*le da el estilo de la primera linea de texto de cabecera*/ 
+.h1-header { 
   color: rgb(187, 75, 187);
   font-family: fantasy;
   font-style: italic;
@@ -41,8 +39,8 @@
   margin-left: 25%;
   margin-right:10px ;
 }
-
-.h3-header{
+/*le da el estilo de la segunda linea de texto de cabecera*/  
+.h3-header{ 
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 30px;
   color: rgb(92, 12, 92);
@@ -61,6 +59,7 @@
   padding: 0;
   margin:auto;
   list-style: none;
+  margin-bottom: 10px;
 }
 
 .menu a{
@@ -87,167 +86,172 @@
   display: inline-flex;  
 }
 
-.body-header-Noticias{
-  margin-top: 50px;
-  margin-left: 50px;
-  font-size: 50PX;
+#Ntitulo{
+color: black;
+margin: 30px; /*margen hacia todos los lados para mantener la distancia*/
+font-family: Impact;
+font-size: 40px;
+}
+#articulo1{
+    float: left;
+    width: 45%;
+    height: 200px;
+    background-color: blueviolet; 
+    margin-left: 30px;
+    margin-top: 5px;
+}
+#articulo2{
+  float: right;
+  width: 45%;
+  height: 200px;
+  background-color: blueviolet;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+#articulo3{
+  float: left;
+  width: 45%;
+  height: 200px;
+  background-color: blueviolet;
+  margin-left: 30px; 
+  margin-top: 5px;
+}
+#articulo4{
+  float: right;
+  width: 45%;
+  height: 200px;
+  background-color: blueviolet;
+  margin-right: 30px;
+  margin-top: 5px;
+}
+.imagen1{
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+
+.imagen2{
+  width: 30%;
+  height: 200px;
+  float: left;
+
+}
+.imagen3{
+  float: left;
+  height: 200px;
+  width: 25%;
+}
+.imagen4{    
+  float: left;
+  height: 200px;
+  width: 30%;
+}
+.texto1{
+    float: left; 
+    width: 60%;
+    margin-left: 10px; 
+}
+#textoN1{
+    float: left;
+    margin-left: 15px;
+    margin-top: 10px; 
+    width: 60%;
+}
+
+.texto2{
+    float: left;
+    width: 60%;
+    margin-left: 10px; 
+}
+
+#textoN2{
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 50%;
+}
+.texto3{
+  float: left; 
+  width: 60%;
+  margin-left: 10px; 
+}
+#textoN3{
+  float: left;
+  margin-left: 15px;
+  margin-top: 10px; 
+  width: 60%;
+}
+.texto4{
+  float: left;
+  width: 60%;
+  margin-left: 10px; 
+}
+
+#textoN4{
+  float: left;
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 55%;
+}
+
+#Ptitulo{
+  color: black;
+  margin: 500px 30px 30px 30px; /*margen hacia todos los lados para mantener la distancia*/
   font-family: Impact;
-  background-color: aqua;
-  
+  font-size: 40px;
 }
-
-.noticias-izq{
-  float: left;
-  width: 20%;
-  height: 140px;
-  margin-left: 20px;
-  margin-bottom: 200px;
-}
-
-.noticias-izq img{
-  width: 85%;
-  height: 140px;
-  float: left;
-  
-}
-
-.noticias-der{
-  float: left;
-  width: 20%;
-  height: 140px;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-.noticias-der img{
-  width: 85%;
-  height: 140px;
-  float: left;
-}
-
-.body-header-publicaciones{
-  margin-top: 40px;
-  margin-left: 50px;
-  font-size: 40PX;
-}
-.div-publicaciones{
-  float: left;
-  margin-top: 20px;
-  margin-left: 20px;
-  width: 680px;
-  height: 545px;
-  background-color: black;
-}
-.div-publicaciones img{
-  max-width: 680px;
-  height: 383px;
-}
-
-
-
-.div-publicaciones p{
-  margin-left: 5px;
-  margin-top: 20px;
-  margin-right: 5px;
-  text-align: justify;
-  color: white;
-
-}
-
-
-.div-publicacion2{
-  float: left;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 680px;
-  height: 545px;
-  background-color: black;
-
-}
-.div-publicacion2 img{
-  max-width: 680px;
-  height: auto;
-  }
-
-.div-publicacion2 p{
-  margin-left: 5px;
-  margin-right: 5px;
-  margin-top: 20px;
-  text-align: justify;
-  color: white;
-
-}
-
-
-#h3-localizacion{
-  width: 33%;
-  height: 140px;
-  background-color: aqua;
-  
-  
-}
-#Localizacion{
-  width: 63%;
-
-  
-}
-.section-footer{
-  margin-top: 10%;
-
-
-}
-.articulo{
-  
-}
-
-
- 
-aside{
-  float: left;
-}
-
-@media screen and (max-width: 1300px){
-  .texto-organizacion{
-      width: 80%;
-  }
-
-  body{
-    background-color: rgb(250, 3, 147);
-  }
-  #copy{
-    color: black;
-  }
-}
-@media screen and (max-width: 900px){
-
-  body{
-    background-color: rgb(8, 239, 247);
-  }
-  .noticias-izq{
-
-    width: 90%;
-}
-.noticias-der{
-
-  width: 90%;
-}
-
-
-@media screen and (max-width: 400px){
-
-  body{
-    background-color: rgb(0, 218, 91);
-  }
-  .img-logo{
-      margin-left: -40px;
-  }
-
-  .h1-header {
-      margin-left: 10%;
+.publi1{
+      float: left;
+      width: 60%;
+      background-color: rgb(180, 253, 107);
+      border: solid rgb(180, 253, 107);
+      margin-left: 10px;
       
-  }
+}    
+#p1{
+  height: 500px auto;
+  width: 100%;
+  border: solid black;
+}
+#p2{
+  height: 500px auto;
+  width: 100%;
+  border: solid black;
+}
+#p3{
+  height: 500px auto;
+  width: 100%;
+  border: solid black;
+}
+#p4{
+  height: 500px auto;
+  width: 100%;
+  border: solid black;
+}
+#mapa{
+  
+  margin-left: 10px;
+  width: 49%; 
+}
 
+aside{
+  float: right;
+  margin-top: 0px ;
+  margin-right: 120px;
+  width: 200px;
+  
+}
+#copy{
+  float: left;
+  color: black;  
+  width: 100%;
+}
+main{
+    width: 60%;
 }
 
 
+#contenedor{
+  height: 1080px;
+}
 

@@ -16,7 +16,7 @@
     line-height: 155%;
     padding: 3%;
     text-indent: 2%;
-    text-align: justify;
+    text-align: left;
   }
   
   h3 {
@@ -162,6 +162,9 @@
     display: none;
     float: right; /*mantiene menú*/
     /*float: left  Quita el menú y se convierte en inicio*/
+}
+.menu  ul li a:hover + ul, .menu ul li ul:hover { /* La primera parte hace que se despligue el menú y la segunda parte nos deja interactuar/mantiene con el menú desplegado*/
+  display: inline-flex;  
 }
 
  
