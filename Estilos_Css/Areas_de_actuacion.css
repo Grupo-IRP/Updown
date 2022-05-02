@@ -53,8 +53,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 0 3% 0;
-  
-  
   }
 
   .texto-arriba {
@@ -65,13 +63,12 @@
   }
    /* círculos */
   .circulo {
-    margin: 0 auto;
+    margin: 3% auto;
     width: 120px;
     height: 120px;
     background-color: #6991ac;
     border-radius: 125px;
     text-align: center;
-    margin-top: 3%;
   }
   
   /* parte abajo*/
