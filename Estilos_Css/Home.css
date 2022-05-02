@@ -235,8 +235,9 @@ font-size: 40px;
 }
 
 aside{
+  position: relative;
   float: right;
-  margin-top: 0px ;
+ bottom: 2000px ;
   margin-right: 120px;
   width: 200px;
   
@@ -292,7 +293,9 @@ main{
   aside{
     float: left;
     margin-left: 10px;
+    top: 0px;
   }
+  
 }
 
 
@@ -309,5 +312,66 @@ main{
       margin-left: 10%;
 
   }
+  #mapa{
+    width: 90%;
+  }
+  .imagen1{
+    width: 100%;
+  }
+  .texto1{
+    width: 100%;
+  }
+  #textoN1{
+    width: 100%;
+  }
+  #articulo1{
+    height: 310px;
+  }
+
+
+  .imagen2{
+    width: 100%;
+  }
+  .texto2{
+    width: 90%;
+  }
+  #textoN2{
+    width: 90%;
+  }
+  #articulo2{
+    height: 310px;
+  }
+
+
+  .imagen3{
+    width: 100%;
+  }
+  .texto3{
+    width: 100%;
+  }
+  #textoN3{
+    width: 90%;
+  }
+  #articulo3{
+    height: 310px; 
+  }
+
+  .imagen4{
+    width: 100%;
+  }
+  .texto4{
+    width: 90%;
+
+  }
+  #textoN4{
+    width: 95%;
+   
+  }
+  #articulo4{
+    height: 310px;
+    margin-bottom: 15px;
+    
+  }
+
 }
 
